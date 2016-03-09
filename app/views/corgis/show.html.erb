@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag(@corgi.filename, class: "image" )%>
+
+<p>
+  <strong>Name:</strong>
+  <%= @corgi.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @corgi.age %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @corgi.user.email %>
+</p>
+<p>
+  <strong>Filename</strong>
+  <%=@corgi.filename%>
+</p>
+
+<%= link_to 'Edit', edit_corgi_path(@corgi) %> |
+<%= link_to 'Back', corgis_path %>
